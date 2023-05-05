@@ -1,2 +1,22 @@
 # todo-microservice-flask
+
 A simple microservice with Python and Flask
+
+#### Setup
+
+* Execute `virtualenv venv -- p ython=python3.11`
+* Execute `source venv/bin/activate` (or `deactivate`)
+
+#### Installation
+
+* Execute `pip install flask`
+* Execute `pip freeze` to loack down dependencies.
+* Other option is if you already have a `requirements.txt` just execute `pip install -r requirements.txt` to install all teh required pendendencies.
+
+#### Execution
+
+* Execute `./run.sh` or 	`flask run`, notices if you haven setup `FLASK_APP` and `FLASK_ENV` execute `export FLASK_APP=main.py` or set up the `.flaskenv` file.
+
+#### Resources
+
+* [Demonstrates how to use Python, Flask, and Docker to quickly prototype and build microservices](https://github.com/cloudacademy/python-flask-microservices)
