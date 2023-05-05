@@ -15,7 +15,7 @@ A simple microservice with Python and Flask
 
 #### Execution
 
-* Execute `./run.sh` or 	`flask run`, notices if you haven setup `FLASK_APP` and `FLASK_ENV` execute `export FLASK_APP=main.py` or set up the `.flaskenv` file.
+* Execute `./run.sh` or 	`flask run`, notices if you haven setup `FLASK_APP` and `FLASK_ENV` execute `export FLASK_APP=main.py` or set up the `.flaskenv` file and run `pip install python-dotenv`
 
 #### Resources
 
