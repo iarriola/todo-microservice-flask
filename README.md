@@ -21,3 +21,13 @@ A simple microservice with Python and Flask
 
 * [Demonstrates how to use Python, Flask, and Docker to quickly prototype and build microservices](https://github.com/cloudacademy/python-flask-microservices)
 * [Editing Python Code in Visual Studio Code](https://code.visualstudio.com/docs/python/editing)
+
+#### API Resources
+
+* [Flask REST API Tutorial - Python Tutorial (pythonbasics.org)](https://pythonbasics.org/flask-rest-api/)
+* [How to Build a REST API With Flask and Postgres Database (makeuseof.com)](https://www.makeuseof.com/build-rest-api-with-flask-and-postgres/)
+
+
+#### Database Resources
+
+* [Understanding connection URI strings in PostgreSQL (prisma.io)](https://www.prisma.io/dataguide/postgresql/short-guides/connection-uris)

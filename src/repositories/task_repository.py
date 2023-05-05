@@ -1,0 +1,3 @@
+class TaskRepository:
+    def __init__(self) -> None:
+        pass
