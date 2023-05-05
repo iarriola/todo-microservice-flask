@@ -27,7 +27,7 @@ A simple microservice with Python and Flask
 * [Flask REST API Tutorial - Python Tutorial (pythonbasics.org)](https://pythonbasics.org/flask-rest-api/)
 * [How to Build a REST API With Flask and Postgres Database (makeuseof.com)](https://www.makeuseof.com/build-rest-api-with-flask-and-postgres/)
 
-
 #### Database Resources
 
 * [Understanding connection URI strings in PostgreSQL (prisma.io)](https://www.prisma.io/dataguide/postgresql/short-guides/connection-uris)
+* [Python Error Handling with the Psycopg2 PostgreSQL Adapter 645 | ObjectRocket](https://kb.objectrocket.com/postgresql/python-error-handling-with-the-psycopg2-postgresql-adapter-645)
