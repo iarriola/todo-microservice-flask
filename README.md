@@ -20,3 +20,4 @@ A simple microservice with Python and Flask
 #### Resources
 
 * [Demonstrates how to use Python, Flask, and Docker to quickly prototype and build microservices](https://github.com/cloudacademy/python-flask-microservices)
+* [Editing Python Code in Visual Studio Code](https://code.visualstudio.com/docs/python/editing)
