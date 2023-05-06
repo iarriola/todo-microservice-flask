@@ -4,18 +4,36 @@ from dotenv import load_dotenv
 
 
 class TaskRepository:
-    def __init__(self) -> None:
+    connection = None
+
+    def __init__(self):
         load_dotenv()
         self.db_url = os.getenv("DATABASE_URL")
-        try:
-            self.connection = psycopg2.connect(self.db_url)
-        except Exception as e:
-            print("Oops! An exception has occured:", e)
+        self._connect()
+
+    def _connect(self):
+        if self._is_connected() is False:
+            print("Connecting to database...")
+            try:
+                self.connection = psycopg2.connect(self.db_url)
+                print("Database connected")
+            except Exception as e:
+                print("An error has occured:", e)
+                self.connection = None
+
+    def _is_connected(self):
+        return self.connection is not None
 
     def get_all(self):
-        query = (
-            "select uuid, title, description, created_at, completed_at, deleted_at from todo.task;"
-        )
+        query = """select
+                    uuid,
+                    title,
+                    description,
+                    created_at,
+                    completed_at,
+                    deleted_at
+                from todo.task;
+            """
 
         try:
             with self.connection:
@@ -35,9 +53,9 @@ class TaskRepository:
                                     "deletedAt": task[5],
                                 }
                             )
-                        return result, 200
+                        return result
                     else:
-                        return [], 200
+                        return []
         except Exception as e:
-            print("Oops! An exception has occured:", e)
+            print("An error has occured:", e)
             return {"message": "Service Unavailable"}

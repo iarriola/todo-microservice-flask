@@ -13,4 +13,4 @@ repo = TaskRepository()
 
 @router.route(API_ROUTE_TASKS, methods=["GET"])
 def get_all():
-    return jsonify(repo.get_all()), 200
+    return jsonify(repo.get_all())
