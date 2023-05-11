@@ -4,7 +4,7 @@ A simple microservice with Python and Flask
 
 #### Setup
 
-* Execute `virtualenv venv -- p ython=python3.11`
+* Execute `python -m venv .venv -- python=python3.11`
 * Execute `source venv/bin/activate` (or `deactivate`)
 
 #### Installation
