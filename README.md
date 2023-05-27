@@ -6,6 +6,7 @@ A simple microservice with Python and Flask
 
 * Execute `python -m venv .venv -- python=python3.11`
 * Execute `source venv/bin/activate` (or `deactivate`)
+* If you need to clean up your environment execute: `pip uninstall -y -r <(pip freeze)`
 
 #### Installation
 
